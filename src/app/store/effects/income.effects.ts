@@ -12,7 +12,9 @@ export class TopListEffects {
   $loadListData = this.actions$
     .pipe(
       ofType(ListActionTypes.LoadData),
-      mergeMap(() => this.listService.topList())
+      mergeMap(() => this.listService.getListData().pipe(
+        map(data => ({ type: 'Loaded Success', payload: data })),
+      ))
     );
 
   constructor(

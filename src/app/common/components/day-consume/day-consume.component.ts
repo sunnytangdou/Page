@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { LoadListData, ChangeListData } from '../../../store';
+import { LoadListData } from '../../../store';
 import { ListState } from '../../../store/reducers/income.reducer';
 
 
