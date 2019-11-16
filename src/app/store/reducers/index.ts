@@ -1,8 +1,8 @@
 import { ActionReducerMap, createSelector, createFeatureSelector } from '@ngrx/store';
-import { topListStore, TopListState } from './income.reducer';
+import { topListStore, ListState } from './income.reducer';
 
 export interface State {
-    topListStore: TopListState;
+    topListStore: ListState;
 }
 
 export const reducers: ActionReducerMap<State> = {

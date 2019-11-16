@@ -1,27 +1,15 @@
 import { Action } from '@ngrx/store';
 
-export enum TopListActionTypes {
-    LoadData = '[TopList Page] Load Data',
-    LoadSuccess = '[TopList API] Data Loaded Success',
-    LoadError = '[TopList Page] Load Error',
-    ChangeValue = '[Hot Page] ChangeValue'
+export enum ListActionTypes {
+    LoadData = 'Load Data',
+    ChangeData = 'Change Data'
 }
 
-//  获取数据
-export class LoadTopListData implements Action {
-    readonly type = TopListActionTypes.LoadData;
+export class LoadListData implements Action {
+    readonly type = ListActionTypes.LoadData;
 }
 
-export class LoadTopListSuccess implements Action {
-    readonly type = TopListActionTypes.LoadSuccess;
-}
-
-export class LoadTopListError implements Action {
-    readonly type = TopListActionTypes.LoadError;
-    constructor(public data: any) { }
-}
-
-export class ChangeTopListValue implements Action {
-    readonly type = TopListActionTypes.ChangeValue;
+export class ChangeListData implements Action {
+    readonly type = ListActionTypes.ChangeData;
     constructor(public payload: { key: string; value: any }) { }
 }

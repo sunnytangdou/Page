@@ -6,6 +6,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { reducers, effects } from './store';
+
+
 import { NZ_I18N, en_US } from 'ng-zorro-antd';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,7 +31,8 @@ registerLocaleData(en);
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    StoreModule,
+    StoreModule.forRoot(reducers),
+    EffectsModule.forRoot(effects),
     FormsModule,
     BrowserAnimationsModule,
     NgZorroAntdModule

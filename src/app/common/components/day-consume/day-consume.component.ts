@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { allDatas } from '../../../store/reducers/appReducer';
-// import { Store } from '@ngrx/store';
+import { Store, select } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { LoadListData, ChangeListData } from '../../../store';
+import { ListState } from '../../../store/reducers/income.reducer';
 
 
 @Component({
@@ -9,11 +11,17 @@ import { allDatas } from '../../../store/reducers/appReducer';
   styleUrls: ['./day-consume.component.css']
 })
 export class DayConsumeComponent implements OnInit {
-  datas: Array<Object> = [];
-  constructor() { }
+  public topListStore$: Observable<ListState>;
+  public datas: Array<Object> = [];
+  constructor(private store: Store<{ topListStore: ListState }>) {
+    this.topListStore$ = store.pipe(select('topListStore'));
+  }
 
   ngOnInit() {
-    this.datas = allDatas;
+    this.store.dispatch(new LoadListData());
+    this.topListStore$.subscribe((data: any) => {
+      this.datas = data.allDatas;
+    });
   }
 }
 

@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class TopListService {
+export class ListService {
   constructor(private http: HttpClient) {
   }
   topList() {
