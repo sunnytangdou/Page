@@ -1,0 +1,29 @@
+<div class="page-content" *ngFor="let item of datas;let i = index">
+  <div class="date">
+    <span>{{ item.custumeDate }}</span>
+    <span *ngIf="i === 0">刷新</span>
+  </div>
+  <div class="day-data">
+    <div class="item-data" *ngFor="let item of item.datas">
+      <div>
+        <img [src]="item.icon" alt="">
+      </div>
+      <div>
+        <p>{{ item.companyName }}</p>
+        <p class="small">
+          <span>{{ item.category }}</span>
+          <span>{{ item.consumption }}</span>
+          <span>{{ item.time }}</span>
+        </p>
+      </div>
+      <div class="stauts">
+        <span *ngIf="item.account">已入账</span>
+        <span *ngIf="!item.account">未入账</span>
+        <span>-</span>
+        <span><img src="./assets/icons/renminbidanjia.svg" alt=""></span>
+        <span>{{ item.amount }}</span>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,48 @@
+li{
+    list-style: none;
+}
+.page-content{
+    background: linear-gradient(to right,#b43803,#e8b330);
+    padding: 15px;
+    border-radius: 10px;
+    color: #eee;
+}
+.bigger{
+    font-size: 20px;
+}
+.page-content .line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-content .line img{
+    width: 25px;
+}
+.page-content .line>div{
+    text-align: left;
+}
+.page-content .line .money{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.page-content .line .money img{
+    width: 15px;
+}
+.page-content .line:nth-child(2){
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.line-budget{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.line-budget span:nth-child(2){
+    margin-left: 15px;
+    margin-right: 8px;
+}
+.line-budget img{
+    width: 20px;
+    margin-top: 3px;
+}

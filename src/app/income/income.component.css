@@ -1,0 +1,16 @@
+.page {
+  padding: 5px;
+}
+.select {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.menu {
+  margin-top: 20px;
+}
+:host ::ng-deep .select .ant-select-selection {
+  box-shadow: none;
+  border-style: none;
+}

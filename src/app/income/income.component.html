@@ -1,0 +1,15 @@
+<div style="text-align:center">
+    <div class="page">
+        <div class='select'>
+            <nz-select class="time-select" [(ngModel)]="selectedValue" (ngModelChange)="timeChange(selectedValue)">
+                <nz-option *ngFor="let option of listOfOption" [nzLabel]="option" [nzValue]="option"></nz-option>
+                <nz-option nzLabel="Default Value" nzValue="Default" nzHide></nz-option>
+            </nz-select>
+        </div>
+        <app-base-info></app-base-info>
+        <div class="menu">
+            <app-menu></app-menu>
+        </div>
+    </div>
+    <app-day-consume></app-day-consume>
+</div>

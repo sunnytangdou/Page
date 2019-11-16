@@ -1,0 +1,7 @@
+<div class="page-content">
+  <div class="item-menu" (click)='goIncome(item)' *ngFor='let item of menus'>
+      <img [src]="item.icon" alt="" *ngIf="!item.active">
+      <img [src]="item.iconActive" alt="" *ngIf="item.active">
+      <p>{{ item.title }}</p>
+    </div>
+</div>
