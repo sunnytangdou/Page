@@ -1,12 +1,10 @@
-// import { reducer } from './appReducer';
-import { ActionReducerMap } from '@ngrx/store';
+import { ActionReducerMap, createSelector, createFeatureSelector } from '@ngrx/store';
+import { topListStore, TopListState } from './income.reducer';
 
-// interface AppState {
-//   appReducer: allDatas;
-// }
-// export const reducers: ActionReducerMap<AppState> = {
-//   // appReducer: reducer
-// };
+export interface State {
+    topListStore: TopListState;
+}
 
-
-
+export const reducers: ActionReducerMap<State> = {
+    topListStore,
+};
