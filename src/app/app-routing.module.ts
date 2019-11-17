@@ -5,7 +5,7 @@ import { CustomPreloadingStrategy } from './config/custom.preloading.strategy';
 const routes: Routes = [
     {
         path: '',
-        redirectTo: '/login',
+        redirectTo: '/income',
         pathMatch: 'full'
     },
     {
