@@ -14,6 +14,7 @@ import { NZ_I18N, en_US } from 'ng-zorro-antd';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { CustomPreloadingStrategy } from './config/custom.preloading.strategy';
 
@@ -35,7 +36,8 @@ registerLocaleData(en);
     EffectsModule.forRoot(effects),
     FormsModule,
     BrowserAnimationsModule,
-    NgZorroAntdModule
+    NgZorroAntdModule,
+    AngularFontAwesomeModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }, {
     provide: LocationStrategy, useClass: HashLocationStrategy
