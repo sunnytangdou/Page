@@ -41,6 +41,13 @@
       "unicode_decimal": 58936
     },
     {
+      "icon_id": "2640465",
+      "name": "人民币",
+      "font_class": "fl-renminbi",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
       "icon_id": "4251776",
       "name": "折线图",
       "font_class": "zhexiantu",
@@ -74,6 +81,13 @@
       "font_class": "change",
       "unicode": "e613",
       "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "11641853",
+      "name": "人民币单价 (1)",
+      "font_class": "renminbidanjia",
+      "unicode": "e615",
+      "unicode_decimal": 58901
     },
     {
       "icon_id": "11749518",

@@ -1,3 +1,15 @@
+.day-consume-container .iconfont.icon-jiubei {
+  font-size: 20px;
+}
+
+.day-consume-container .stauts .money {
+  font-size: 17px;
+}
+
+.day-consume-container .iconfont.icon-renminbidanjia {
+  font-size: 20px;
+}
+
 .date {
   display: flex;
   align-items: center;
@@ -17,16 +29,13 @@
   display: flex;
   align-items: center;
   height: 60px;
-  padding: 5px;
   border-top: 1px solid #9a9a9a;
-  /* border: 1px solid green; */
 }
-.day-data .item-data:nth-child(1){
-    border-top: none;
+.day-data .item-data:nth-child(1) {
+  border-top: none;
 }
 .day-data .item-data > div {
   margin-right: 8px;
-  /* border: 1px solid red; */
 }
 .day-data .item-data > div:nth-child(2) {
   width: 55%;
@@ -54,15 +63,14 @@
 .stauts {
   display: flex;
   align-items: center;
-  margin-top: -12px;
+  margin-top: -18px;
 }
 .stauts img {
   width: 20px;
 }
 .stauts > span:nth-child(1) {
-  width: 40px;
+  width: 50px;
   height: 20px;
-  line-height: 20px;
   text-align: center;
   font-size: 10px;
   color: #fc9a2e;
@@ -71,6 +79,7 @@
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  transform: scale(0.8);
 }
 .stauts > span:nth-child(2) {
   font-size: 20px;

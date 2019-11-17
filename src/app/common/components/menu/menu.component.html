@@ -1,7 +1,6 @@
-<div class="page-content">
-  <div class="item-menu" (click)='goIncome(item)' *ngFor='let item of menus'>
-      <img [src]="item.icon" alt="" *ngIf="!item.active">
-      <img [src]="item.iconActive" alt="" *ngIf="item.active">
+<div class="menu-container page-content">
+  <div class="item-menu" (click)="activedItem(item)" *ngFor="let item of menus">
+      <span class="iconfont {{ item.iconClass }}" [ngClass]="{'active': item == isActive}"></span>
       <p>{{ item.title }}</p>
     </div>
 </div>

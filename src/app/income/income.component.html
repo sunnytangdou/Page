@@ -1,11 +1,11 @@
 <div class="income-container" style="text-align:center">
     <div class='select'>
         <nz-select class="date-picker" [(ngModel)]="selectedDate" (ngModelChange)="dateChange(selectedDate)">
-            <nz-option *ngFor="let date of dateList" [nzLabel]="date" [nzValue]="option"></nz-option>
+            <nz-option *ngFor="let date of dateList" [nzLabel]="date" [nzValue]="date"></nz-option>
             <nz-option nzLabel="Default Value" nzValue="Default" nzHide></nz-option>
         </nz-select>
         <nz-select class="account-picker" [(ngModel)]="selectedAccount" (ngModelChange)="accountChange(selectedAccount)">
-            <nz-option *ngFor="let account of accountList" [nzLabel]="account" [nzValue]="option"></nz-option>
+            <nz-option *ngFor="let account of accountList" [nzLabel]="account" [nzValue]="account"></nz-option>
             <nz-option nzLabel="Default Value" nzValue="Default" nzHide></nz-option>
         </nz-select>
     </div>

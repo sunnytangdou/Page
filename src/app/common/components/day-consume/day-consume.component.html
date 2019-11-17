@@ -1,4 +1,4 @@
-<div class="page-content" *ngFor="let item of datas;let i = index">
+<div class="day-consume-container page-content" *ngFor="let item of datas;let i = index">
   <div class="date">
     <span>{{ item.custumeDate }}</span>
     <span *ngIf="i === 0">刷新</span>
@@ -6,7 +6,7 @@
   <div class="day-data">
     <div class="item-data" *ngFor="let item of item.datas">
       <div>
-        <img [src]="item.icon" alt="">
+        <span class="iconfont icon-jiubei"></span>
       </div>
       <div>
         <p>{{ item.companyName }}</p>
@@ -20,8 +20,10 @@
         <span *ngIf="item.account">已入账</span>
         <span *ngIf="!item.account">未入账</span>
         <span>-</span>
-        <span><img src="./assets/icons/renminbidanjia.svg" alt=""></span>
-        <span>{{ item.amount }}</span>
+        <span>
+          <span class="iconfont icon-renminbidanjia"></span>
+        </span>
+        <span class="money">{{ item.amount }}</span>
       </div>
     </div>
 

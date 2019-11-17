@@ -6,36 +6,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+
+  public isActive: any = undefined;
+
   activeIncome: Boolean = false;
   menus: any = [{
     title: '收支分析',
-    icon: './assets/icons/jibenzhexiantu.svg',
-    iconActive: './assets/icons/jibenzhexiantuactive.svg',
-    active: false
+    iconClass: 'icon-zhexiantu'
   }, {
     title: '月度账单',
-    icon: './assets/icons/dingdandingdanmingxishouzhimingxi-xianxing.svg',
-    iconActive: './assets/icons/dingdandingdanmingxishouzhimingxi-xianxingactive.svg',
-    active: false
+    iconClass: 'icon-zhangdan'
   }, {
     title: '我的账本',
-    icon: './assets/icons/shouzhimingxicaifuhongbaoyue.svg',
-    iconActive: './assets/icons/shouzhimingxicaifuhongbaoyueactive.svg',
-    active: false
+    iconClass: 'icon-zhangben'
   }, {
     title: '查找交易',
-    icon: './assets/icons/chazhao.svg',
-    iconActive: './assets/icons/chazhaoactive.svg',
-    active: false
+    iconClass: 'icon-chazhao'
   }];
   constructor() { }
 
   ngOnInit() {
   }
-  goIncome(item) {
-    this.menus.map(function(o) {
-      o.active = false;
-    });
-    item.active = true;
+
+  activedItem(item) {
+    this.isActive = item;
   }
 }

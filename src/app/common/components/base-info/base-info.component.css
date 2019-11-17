@@ -1,6 +1,11 @@
 li{
     list-style: none;
 }
+
+.page-content .iconfont {
+    font-size: 20px;
+}
+
 .page-content{
     background: linear-gradient(to right,#b43803,#e8b330);
     padding: 15px;
