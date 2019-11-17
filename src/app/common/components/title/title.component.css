@@ -1,4 +1,4 @@
-.title {
+.title-container {
   display: flex;
   position: relative;
   align-items: center;
@@ -10,21 +10,21 @@
   font-size: 18px;
 }
 
-.title a {
+.title-container a {
   color: #fff;
   margin: auto 8px;
 }
 
-.title .title-left,
-.title .title-right {
+.title-container .title-left,
+.title-container .title-right {
   width: 100px;
 }
 
-.title .title-right {
+.title-container .title-right {
   text-align: right;
 }
 
-.title .title-badge {
+.title-container .title-badge {
   position: absolute;
   top: 2px;
   right: 5px;
