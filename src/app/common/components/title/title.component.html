@@ -1,12 +1,27 @@
-<div class='parent'>
-  <span>
-    <img src="assets/icons/arrow-lift.svg" alt="">
-  </span>
-  <span>{{ title }}</span> 
-  <span>
-    <img src="assets/icons/gengduo.svg" alt="">
-  </span>
+<div class="title">
+  <div class="title-left">
+    <!-- <img src="assets/icons/arrow-lift.svg" alt=""> -->
+    <a>
+      <fa name="chevron-left" size="lg"></fa>
+    </a>
+  </div>
+  <div class="title-center">{{ title }}</div>
+  <div class="title-right">
+    <!-- <img src="assets/icons/gengduo.svg" alt=""> -->
+    <a class="title-badge">99</a>
+    
+    <!-- <nz-badge [nzCount]="99">
+      <a class="head-example"></a>
+    </nz-badge> -->
+    <!-- lg, 2x, 3x, 4x, 5x -->
+    <a>
+      <fa name="headphones" size="lg"></fa>
+    </a>
+    <a>
+      <fa name="ellipsis-h" size="lg"></fa>
+    </a>
+  </div>
 </div>
-<div class="message">
+<!-- <div class="message">
   78
-</div>
+</div> -->

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NzSelectModule } from 'ng-zorro-antd/select';
+import { NzBadgeModule } from 'ng-zorro-antd/badge';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { IncomeRoutingModule } from './income-routing.module';
 
@@ -16,6 +17,7 @@ import { DayConsumeComponent } from '../common/components/day-consume/day-consum
     FormsModule,
     CommonModule,
     NzSelectModule,
+    NzBadgeModule,
     AngularFontAwesomeModule,
     IncomeRoutingModule
   ]
