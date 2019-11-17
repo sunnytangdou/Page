@@ -1,0 +1,86 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "309603",
+      "name": "chevron-left",
+      "font_class": "chevronleft",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "796827",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "827994",
+      "name": "账单",
+      "font_class": "zhangdan",
+      "unicode": "e6b8",
+      "unicode_decimal": 59064
+    },
+    {
+      "icon_id": "1249078",
+      "name": "账本",
+      "font_class": "zhangben",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "1761450",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "4251776",
+      "name": "折线图",
+      "font_class": "zhexiantu",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "7120577",
+      "name": "查找",
+      "font_class": "chazhao",
+      "unicode": "e74b",
+      "unicode_decimal": 59211
+    },
+    {
+      "icon_id": "7141748",
+      "name": "chevron-right",
+      "font_class": "chevron-right",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "7550266",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "9512507",
+      "name": "交换",
+      "font_class": "change",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "11749518",
+      "name": "酒杯",
+      "font_class": "jiubei",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    }
+  ]
+}
